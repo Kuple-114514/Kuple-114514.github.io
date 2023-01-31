@@ -3,11 +3,11 @@
 # --------------------------------------
 
 menu:
-  首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  列表||fas fa-list:
+  首页: / || <i class="iconfont icon-zhuye"></i> || fas fa-home
+  归档: /archives/ || <i class="iconfont icon-daohang"></i> || fas fa-archive
+  标签: /tags/ || <i class="iconfont icon-zhuye"></i> || fas fa-tags
+  分类: /categories/ || <i class="iconfont icon-zhuye"></i> || fas fa-folder-open
+  列表|| fas fa-list || hide:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
   # 友链: /link/ || fas fa-link
@@ -40,8 +40,11 @@ copy:
 #  formal:
   # Kuple: link || 个人小站
 social:
-  fab fa-github: https://github.com/Kuple-114514 || Github
-  fas fa-envelope: kuple114514@gmail.com || Email
+  微信: /assets/QRCode.jpg || icon-weixin || faa-tada
+  QQ: https://res.abeim.cn/api/qq/?qq=2624726410 || icon-QQ || faa-tada
+  B站: https://space.bilibili.com/424628204 || icon-bilibili || faa-tada
+  QQ邮箱: mailto:2624726410@qq.com || icon-youxiang || faa-tada
+  # 力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -879,10 +882,14 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3874142_5sgtohu1jx.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/universe.css">
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    # - <script async src="//at.alicdn.com/t/font_2264842_b004iy0kk2b.js"></script> 
+    - <script defer src="/js/cursor.js"></script>
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
     # - <script src="xxxx"></script>
