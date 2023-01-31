@@ -103,7 +103,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/Kuple-114514/Kuple-114514.github.io
+  repository: git@github.com:Kuple-114514/Kuple-114514.github.io.git
   branch: main
 
 # Live2D
